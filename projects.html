@@ -1,0 +1,35 @@
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml"><head><meta content="text/html; charset=UTF-8" http-equiv="content-type" /><meta name="description" /><meta name="keywords" /><meta content="Elliott &quot;Seylerius&quot; Seyler" name="author" /><link href="/images/favicon.ico" rel="icon" type="image/x-icon" /><link href="/images/favicon.ico" rel="shortcut icon" type="image/x-icon" /><link href="/default.css" rel="stylesheet" type="text/css" /><link href="/rss-feed" rel="alternate" title="Seriously, Seylerius" type="application/rss+xml" /><script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script><script>WebFont.load({google: {families: ['Asul', 'Chivo:400,900']}});</script><script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script><title>Projects | Seriously, Seylerius</title></head><body><div id="wrap"><div id="header"><h1><a href="/">Seriously, Seylerius</a></h1><div class="pages"><a class="page" href="/">Home</a> | <a class="page" href="/projects.html">Projects</a> | <a class="page" href="/writeups.html">Analysis</a> | <a class="page" href="/archives.html">Archives</a> | <a class="page" href="/tags/">Tags</a> | <a class="page" href="/contact.html" rel="author">About</a><form action="http://www.google.com/search" id="searchform" method="get"><div><input class="box" id="s" name="q" type="text" /><input name="sitesearch" type="hidden" value="seriouslyseylerius.com" /></div></form></div></div><div id="content"><div id="post"><h2 class="page-title">Projects</h2><p>
+The following projects take up the majority of my time. 
+</p>
+
+<div id="outline-container-orgbdff6d3" class="outline-2">
+<h2 id="orgbdff6d3">Emacs Queue</h2>
+<div class="outline-text-2" id="text-orgbdff6d3">
+<p>
+I'll likely be releasing this publicly within a week or so. I got tired of considering whether a file needs <code>sudo</code> for authenticated access, and more fatigued still of keeping a second terminal open to access remote files in my local Emacs via TRAMP. 
+</p>
+
+<p>
+The Emacs Queue system is composed of a server (written in Clojure) that accepts requests to launch <code>emacsclient</code>, and a client (written in Clojurescript and run on the fast-loading <a href="http://planck-repl.org/">Planck REPL</a>) that calls that API both locally and over reverse SSH tunnels. The client automatically assembles the TRAMP spec for a given file, adding SSH hops and <code>sudo</code> authentication as needed.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgabcc1dc" class="outline-2">
+<h2 id="orgabcc1dc">Service Desk</h2>
+<div class="outline-text-2" id="text-orgabcc1dc">
+<p>
+A slightly longer-term and slower-paced project, this will assist in managing information intake, to prevent being overwhelmed. It will be able to aggregate RSS feeds, Reddit &amp; Twitter, aiming to prevent echo chamber effects. Later features will also add mild bot capabilities, assisting with follower management and auto-responses.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org8bdc6d7" class="outline-2">
+<h2 id="org8bdc6d7">Gnipping</h2>
+<div class="outline-text-2" id="text-org8bdc6d7">
+<p>
+Given the rise of "alternative facts" and fake news, as well as the overwhelming volume of leaked data, we need a toolkit to organize and assist in the analysis of all the available information. Gnipping will be a collaborative toolkit for research and analysis.
+</p>
+</div>
+</div>
+</div><div id="disqus"></div></div><div id="footer"><a href="/rss-feed"> RSS Feed</a><p>&copy; 2017<a href="http://www.seriouslyseylerius.com"> Elliott "Seylerius" Seyler</a></p></div></div></body></html>

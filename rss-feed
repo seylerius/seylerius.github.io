@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<rss version="2.0"><channel><title>Seriously, Seylerius</title><link>http://www.seriouslyseylerius.com</link><description>Analysis &amp; research in tech, politics &amp; activism</description><item><title>Rebooting the Site</title><link>http://www.seriouslyseylerius.com/2017/04/19/site-reboot/</link><pubDate>Wed, 19 Apr 2017 00:00:00 -0700</pubDate><description>&lt;p&gt;
+Obviously enough to those who&apos;ve checked, my site&apos;s been down for a while, due to my dissatisfaction with how I&apos;d set it up and lack of time to fix it. Equally obviously, this state has changed.
+&lt;/p&gt;
+
+&lt;p&gt;
+I&apos;ve rebuilt the site using &lt;a href=&quot;http://nakkaya.com/static.html&quot;&gt;Nakkaya&apos;s static&lt;/a&gt;, a Clojure-based static site generator. I&apos;m going to be featuring writeups more than blog posts, and have thus chosen a tool that supports &lt;a href=&quot;http://orgmode.org&quot;&gt;org-mode&lt;/a&gt;, an easily learned text markup that can double as a code notebook, among many other things. This allows me to easily embed the code and results I use in my analysis directly into my writeups. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Disqus comments are still at the bottom of posts, and I welcome your feedback about the change, as well as anything I share. 
+&lt;/p&gt;
+</description></item></channel></rss>
