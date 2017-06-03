@@ -2,49 +2,49 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org1913616">Abstract</a></li>
-<li><a href="#org7278787">Wikileaks Server Identification</a>
+<li><a href="#org02c75e1">Abstract</a></li>
+<li><a href="#org15f1af9">Wikileaks Server Identification</a>
 <ul>
-<li><a href="#org98fd345"><code>wikileaks.org</code></a></li>
-<li><a href="#org90a151c"><code>ns1.wikileaks.org</code></a></li>
-<li><a href="#orga0a0166"><code>ns2.wikileaks.org</code></a></li>
-<li><a href="#org1da152c"><code>ns3.wikileaks.org</code></a></li>
-<li><a href="#org02245d1"><code>ns4.wikileaks.org</code></a></li>
-<li><a href="#org6b93c8d"><code>mx.wikileaks.org</code></a></li>
-<li><a href="#orgb909ead">IP Addresses Found</a>
+<li><a href="#org1219d7b"><code>wikileaks.org</code></a></li>
+<li><a href="#org5c7a671"><code>ns1.wikileaks.org</code></a></li>
+<li><a href="#org102c620"><code>ns2.wikileaks.org</code></a></li>
+<li><a href="#orgf47c4b8"><code>ns3.wikileaks.org</code></a></li>
+<li><a href="#org8040dfa"><code>ns4.wikileaks.org</code></a></li>
+<li><a href="#orgfd8d14d"><code>mx.wikileaks.org</code></a></li>
+<li><a href="#org441b2f6">IP Addresses Found</a>
 <ul>
-<li><a href="#orgab4d90d"><code>wikileaks.org</code></a></li>
+<li><a href="#orgdace362"><code>wikileaks.org</code></a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#org2571e59">Host Nationality Influence?</a>
+<li><a href="#org07c326d">Host Nationality Influence?</a>
 <ul>
-<li><a href="#org698ba28">Blix Solutions</a>
+<li><a href="#orgce6aaf8">Blix Solutions</a>
 <ul>
-<li><a href="#orgd2e1517">Servers</a></li>
+<li><a href="#org76b6bd6">Servers</a></li>
 </ul>
 </li>
-<li><a href="#orgc0d9b2e">Solar Communications, GmbH</a>
+<li><a href="#org3c659b4">Solar Communications, GmbH</a>
 <ul>
-<li><a href="#org5aceea6">Servers</a></li>
+<li><a href="#org5decc99">Servers</a></li>
 </ul>
 </li>
-<li><a href="#orgebec783">LeaseWeb</a>
+<li><a href="#orgb432873">LeaseWeb</a>
 <ul>
-<li><a href="#org8460d76">Servers</a></li>
+<li><a href="#org39b5a66">Servers</a></li>
 </ul>
 </li>
-<li><a href="#orgcfa0e62">Hostkey</a>
+<li><a href="#org9c1119e">Hostkey</a>
 <ul>
-<li><a href="#org9f20de8">Servers</a></li>
+<li><a href="#orgda578f6">Servers</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#org2d421ac">Distinguishing Possible Configurations</a></li>
-<li><a href="#org6590439">Potential Impact</a></li>
-<li><a href="#org715c589">Conclusion</a></li>
+<li><a href="#orgd655e5b">Distinguishing Possible Configurations</a></li>
+<li><a href="#org639432b">Potential Impact</a></li>
+<li><a href="#orga859947">Conclusion</a></li>
 </ul>
 </div>
 </div>
@@ -59,9 +59,9 @@ So, this tweet has been making the rounds.
 Patrick seems to be making the argument that Wikileaks is running on Russian servers, and that this indicates Russian influence over Wikileaks. I'll take a look at each of these points. 
 </p>
 
-<div id="outline-container-org1913616" class="outline-2">
-<h2 id="org1913616">Abstract</h2>
-<div class="outline-text-2" id="text-org1913616">
+<div id="outline-container-org02c75e1" class="outline-2">
+<h2 id="org02c75e1">Abstract</h2>
+<div class="outline-text-2" id="text-org02c75e1">
 <p>
 Analysis of DNS and <code>whois</code> data for <code>wikileaks.org</code> and subdomains reveals multiple servers hosted in Russia with a company called Hostkey. One of these servers lists contact data in Amsterdam, despite the server (and the company's headquarters) being located in Moscow. Hostkey's suspected and confirmed connections to FSB, the Russian hacker community, and Russian surveillance technology firms are concerning given that there is reason to suspect that Wikileaks' SSL connections are terminating in Moscow, thus providing the Russians with a cleartext copy of the private key.
 </p>
@@ -70,9 +70,9 @@ Analysis of DNS and <code>whois</code> data for <code>wikileaks.org</code> and s
 </div>
 </div>
 
-<div id="outline-container-org7278787" class="outline-2">
-<h2 id="org7278787">Wikileaks Server Identification</h2>
-<div class="outline-text-2" id="text-org7278787">
+<div id="outline-container-org15f1af9" class="outline-2">
+<h2 id="org15f1af9">Wikileaks Server Identification</h2>
+<div class="outline-text-2" id="text-org15f1af9">
 <p>
 I'm going to track down individual server IP addresses using the <code>dig</code> command. The domains traced in the image are:
 </p>
@@ -91,9 +91,9 @@ Let's check each of these in turn.
 </p>
 </div>
 
-<div id="outline-container-org98fd345" class="outline-3">
-<h3 id="org98fd345"><code>wikileaks.org</code></h3>
-<div class="outline-text-3" id="text-org98fd345">
+<div id="outline-container-org1219d7b" class="outline-3">
+<h3 id="org1219d7b"><code>wikileaks.org</code></h3>
+<div class="outline-text-3" id="text-org1219d7b">
 <details>
   <summary>
 
@@ -525,9 +525,9 @@ Let's check each of these in turn.
 </div>
 </div>
 
-<div id="outline-container-org90a151c" class="outline-3">
-<h3 id="org90a151c"><code>ns1.wikileaks.org</code></h3>
-<div class="outline-text-3" id="text-org90a151c">
+<div id="outline-container-org5c7a671" class="outline-3">
+<h3 id="org5c7a671"><code>ns1.wikileaks.org</code></h3>
+<div class="outline-text-3" id="text-org5c7a671">
 <details>
   <summary>
 
@@ -895,9 +895,9 @@ Let's check each of these in turn.
 </div>
 </div>
 
-<div id="outline-container-orga0a0166" class="outline-3">
-<h3 id="orga0a0166"><code>ns2.wikileaks.org</code></h3>
-<div class="outline-text-3" id="text-orga0a0166">
+<div id="outline-container-org102c620" class="outline-3">
+<h3 id="org102c620"><code>ns2.wikileaks.org</code></h3>
+<div class="outline-text-3" id="text-org102c620">
 <details>
   <summary>
 
@@ -1265,9 +1265,9 @@ Let's check each of these in turn.
 </div>
 </div>
 
-<div id="outline-container-org1da152c" class="outline-3">
-<h3 id="org1da152c"><code>ns3.wikileaks.org</code></h3>
-<div class="outline-text-3" id="text-org1da152c">
+<div id="outline-container-orgf47c4b8" class="outline-3">
+<h3 id="orgf47c4b8"><code>ns3.wikileaks.org</code></h3>
+<div class="outline-text-3" id="text-orgf47c4b8">
 <details>
   <summary>
 
@@ -1667,9 +1667,9 @@ Let's check each of these in turn.
 </div>
 </div>
 
-<div id="outline-container-org02245d1" class="outline-3">
-<h3 id="org02245d1"><code>ns4.wikileaks.org</code></h3>
-<div class="outline-text-3" id="text-org02245d1">
+<div id="outline-container-org8040dfa" class="outline-3">
+<h3 id="org8040dfa"><code>ns4.wikileaks.org</code></h3>
+<div class="outline-text-3" id="text-org8040dfa">
 <details>
   <summary>
 
@@ -2069,9 +2069,9 @@ Let's check each of these in turn.
 </div>
 </div>
 
-<div id="outline-container-org6b93c8d" class="outline-3">
-<h3 id="org6b93c8d"><code>mx.wikileaks.org</code></h3>
-<div class="outline-text-3" id="text-org6b93c8d">
+<div id="outline-container-orgfd8d14d" class="outline-3">
+<h3 id="orgfd8d14d"><code>mx.wikileaks.org</code></h3>
+<div class="outline-text-3" id="text-orgfd8d14d">
 <details>
   <summary>
 
@@ -2439,13 +2439,13 @@ Let's check each of these in turn.
 </div>
 </div>
 
-<div id="outline-container-orgb909ead" class="outline-3">
-<h3 id="orgb909ead">IP Addresses Found</h3>
-<div class="outline-text-3" id="text-orgb909ead">
-</div><div id="outline-container-orgab4d90d" class="outline-4">
-<h4 id="orgab4d90d"><code>wikileaks.org</code></h4>
-<div class="outline-text-4" id="text-orgab4d90d">
-</div><ul class="org-ul"><li><a id="orgab4e73a"></a><b>NS</b> <code>ns1.wikileaks.org</code><br /><ul class="org-ul"><li><a id="org7c9d045"></a><b>A</b> <code>46.28.206.82</code><br /><div class="outline-text-6" id="text-org7c9d045">
+<div id="outline-container-org441b2f6" class="outline-3">
+<h3 id="org441b2f6">IP Addresses Found</h3>
+<div class="outline-text-3" id="text-org441b2f6">
+</div><div id="outline-container-orgdace362" class="outline-4">
+<h4 id="orgdace362"><code>wikileaks.org</code></h4>
+<div class="outline-text-4" id="text-orgdace362">
+</div><ul class="org-ul"><li><a id="orgfaeaa22"></a><b>NS</b> <code>ns1.wikileaks.org</code><br /><ul class="org-ul"><li><a id="org7e4ca79"></a><b>A</b> <code>46.28.206.82</code><br /><div class="outline-text-6" id="text-org7e4ca79">
 <details>
   <summary>
 
@@ -3422,7 +3422,7 @@ Let's check each of these in turn.
 </dl>
 </div></li></ul></li>
 
-<li><a id="orgac3efee"></a><b>NS</b> <code>ns2.wikileaks.org</code><br /><ul class="org-ul"><li><a id="org0a35f6b"></a><b>A</b> <code>46.28.206.82</code> (Repeat of <code>ns1.wikileaks.org</code>)<br /><div class="outline-text-6" id="text-org0a35f6b">
+<li><a id="org9cd2097"></a><b>NS</b> <code>ns2.wikileaks.org</code><br /><ul class="org-ul"><li><a id="org022e935"></a><b>A</b> <code>46.28.206.82</code> (Repeat of <code>ns1.wikileaks.org</code>)<br /><div class="outline-text-6" id="text-org022e935">
 <dl class="org-dl">
 <dt>Host</dt><dd>Solar Communications, GmbH</dd>
 <dt>Host Location</dt><dd>Zurich, Switzerland</dd>
@@ -3430,7 +3430,7 @@ Let's check each of these in turn.
 </dl>
 </div></li></ul></li>
 
-<li><a id="org1be1dd9"></a><b>NS</b> <code>ns3.wikileaks.org</code><br /><ul class="org-ul"><li><a id="org0d45e32"></a><b>A</b> <code>195.35.109.54</code><br /><div class="outline-text-6" id="text-org0d45e32">
+<li><a id="org0e486ac"></a><b>NS</b> <code>ns3.wikileaks.org</code><br /><ul class="org-ul"><li><a id="org7fbd68c"></a><b>A</b> <code>195.35.109.54</code><br /><div class="outline-text-6" id="text-org7fbd68c">
 <details>
   <summary>
 
@@ -4628,7 +4628,7 @@ Let's check each of these in turn.
 </dl>
 </div></li>
 
-<li><a id="org7449fca"></a><b>A</b> <code>95.211.113.132</code><br /><div class="outline-text-6" id="text-org7449fca">
+<li><a id="orgb786a10"></a><b>A</b> <code>95.211.113.132</code><br /><div class="outline-text-6" id="text-orgb786a10">
 <details>
   <summary>
 
@@ -7069,7 +7069,7 @@ Let's check each of these in turn.
 </dl>
 </div></li>
 
-<li><a id="org90d5db9"></a><b>A</b> <code>141.105.65.114</code><br /><div class="outline-text-6" id="text-org90d5db9">
+<li><a id="org74e1443"></a><b>A</b> <code>141.105.65.114</code><br /><div class="outline-text-6" id="text-org74e1443">
 <details>
   <summary>
 
@@ -9610,7 +9610,7 @@ Let's check each of these in turn.
 </dl>
 </div></li></ul></li>
 
-<li><a id="org8681a7b"></a><b>NS</b> <code>ns4.wikileaks.org</code><br /><ul class="org-ul"><li><a id="orgd7efbea"></a><b>A</b> <code>31.192.105.18</code><br /><div class="outline-text-6" id="text-orgd7efbea">
+<li><a id="org1a30cdf"></a><b>NS</b> <code>ns4.wikileaks.org</code><br /><ul class="org-ul"><li><a id="org9821ccb"></a><b>A</b> <code>31.192.105.18</code><br /><div class="outline-text-6" id="text-org9821ccb">
 <details>
   <summary>
 
@@ -10536,7 +10536,7 @@ Let's check each of these in turn.
 </dl>
 </div></li>
 
-<li><a id="org9c1a6df"></a><b>A</b> <code>95.211.113.155</code><br /><div class="outline-text-6" id="text-org9c1a6df">
+<li><a id="org993b8e6"></a><b>A</b> <code>95.211.113.155</code><br /><div class="outline-text-6" id="text-org993b8e6">
 <details>
   <summary>
 
@@ -12977,7 +12977,7 @@ Let's check each of these in turn.
 </dl>
 </div></li>
 
-<li><a id="org1204591"></a><b>A</b> <code>195.35.109.46</code><br /><div class="outline-text-6" id="text-org1204591">
+<li><a id="org0bc7fba"></a><b>A</b> <code>195.35.109.46</code><br /><div class="outline-text-6" id="text-org0bc7fba">
 <details>
   <summary>
 
@@ -14175,7 +14175,7 @@ Let's check each of these in turn.
 </dl>
 </div></li></ul></li>
 
-<li><a id="orga4594aa"></a><b>MX</b> <code>mx.wikileaks.org</code><br /><ul class="org-ul"><li><a id="orgdb74d8c"></a><b>A</b> <code>195.35.109.60</code><br /><div class="outline-text-6" id="text-orgdb74d8c">
+<li><a id="org6c66ab4"></a><b>MX</b> <code>mx.wikileaks.org</code><br /><ul class="org-ul"><li><a id="org46c2bb8"></a><b>A</b> <code>195.35.109.60</code><br /><div class="outline-text-6" id="text-org46c2bb8">
 <details>
   <summary>
 
@@ -15373,7 +15373,7 @@ Let's check each of these in turn.
 </dl>
 </div></li></ul></li>
 
-<li><a id="org18c6dfc"></a><b>A</b> <code>195.35.109.53</code><br /><div class="outline-text-5" id="text-org18c6dfc">
+<li><a id="org9764c71"></a><b>A</b> <code>195.35.109.53</code><br /><div class="outline-text-5" id="text-org9764c71">
 <details>
   <summary>
 
@@ -16571,7 +16571,7 @@ Let's check each of these in turn.
 </dl>
 </div></li>
 
-<li><a id="org8da77dc"></a><b>A</b> <code>95.211.113.131</code><br /><div class="outline-text-5" id="text-org8da77dc">
+<li><a id="orgbc7c53f"></a><b>A</b> <code>95.211.113.131</code><br /><div class="outline-text-5" id="text-orgbc7c53f">
 <details>
   <summary>
 
@@ -19012,7 +19012,7 @@ Let's check each of these in turn.
 </dl>
 </div></li>
 
-<li><a id="orgb16f18f"></a><b>A</b> <code>195.35.109.44</code><br /><div class="outline-text-5" id="text-orgb16f18f">
+<li><a id="orga33c00c"></a><b>A</b> <code>195.35.109.44</code><br /><div class="outline-text-5" id="text-orga33c00c">
 <details>
   <summary>
 
@@ -20210,7 +20210,7 @@ Let's check each of these in turn.
 </dl>
 </div></li>
 
-<li><a id="orgb431395"></a><b>A</b> <code>95.211.113.154</code><br /><div class="outline-text-5" id="text-orgb431395">
+<li><a id="org2c67ca2"></a><b>A</b> <code>95.211.113.154</code><br /><div class="outline-text-5" id="text-org2c67ca2">
 <details>
   <summary>
 
@@ -22651,7 +22651,7 @@ Let's check each of these in turn.
 </dl>
 </div></li>
 
-<li><a id="org645252c"></a><b>A</b> <code>141.105.69.239</code><br /><div class="outline-text-5" id="text-org645252c">
+<li><a id="orge75c9a8"></a><b>A</b> <code>141.105.69.239</code><br /><div class="outline-text-5" id="text-orge75c9a8">
 <details>
   <summary>
 
@@ -25195,9 +25195,9 @@ Let's check each of these in turn.
 </div>
 </div>
 
-<div id="outline-container-org2571e59" class="outline-2">
-<h2 id="org2571e59">Host Nationality Influence?</h2>
-<div class="outline-text-2" id="text-org2571e59">
+<div id="outline-container-org07c326d" class="outline-2">
+<h2 id="org07c326d">Host Nationality Influence?</h2>
+<div class="outline-text-2" id="text-org07c326d">
 <p>
 So we can see from the above that a few different companies are involved in Wikileaks' hosting:
 </p>
@@ -25214,17 +25214,17 @@ Interestingly, one of the Hostkey servers is falsely listed in Amsterdam, despit
 </p>
 </div>
 
-<div id="outline-container-org698ba28" class="outline-3">
-<h3 id="org698ba28">Blix Solutions</h3>
-<div class="outline-text-3" id="text-org698ba28">
+<div id="outline-container-orgce6aaf8" class="outline-3">
+<h3 id="orgce6aaf8">Blix Solutions</h3>
+<div class="outline-text-3" id="text-orgce6aaf8">
 <p>
 An ISP and server host based out of Oslo, Norway, Blix has data centers in Oslo, Stockholm, Copenhagen, Amsterdam, and New York. Founded by Eirik Blix, it seems to be a young, flexible ISP/hosting business. 
 </p>
 </div>
 
-<div id="outline-container-orgd2e1517" class="outline-4">
-<h4 id="orgd2e1517">Servers</h4>
-<div class="outline-text-4" id="text-orgd2e1517">
+<div id="outline-container-org76b6bd6" class="outline-4">
+<h4 id="org76b6bd6">Servers</h4>
+<div class="outline-text-4" id="text-org76b6bd6">
 <dl class="org-dl">
 <dt><code>wikileaks.org</code></dt><dd>2 servers</dd>
 <dt><code>ns3.wikileaks.org</code></dt><dd>1 server</dd>
@@ -25235,17 +25235,17 @@ An ISP and server host based out of Oslo, Norway, Blix has data centers in Oslo,
 </div>
 </div>
 
-<div id="outline-container-orgc0d9b2e" class="outline-3">
-<h3 id="orgc0d9b2e">Solar Communications, GmbH</h3>
-<div class="outline-text-3" id="text-orgc0d9b2e">
+<div id="outline-container-org3c659b4" class="outline-3">
+<h3 id="org3c659b4">Solar Communications, GmbH</h3>
+<div class="outline-text-3" id="text-org3c659b4">
 <p>
 A medium-sized host in Switzerland, Solar Communications offers dedicated servers, colocation, cloud hosting, a CDN, and DDOS protection. I've heard claims that they're a host for a number of private, corporate Tor nodes, but I haven't found any evidence of this yet. A <a href="https://trac.torproject.org/projects/tor/wiki/doc/GoodBadISPs#Switzerland">comment from them</a> can be found on the Tor ISP review page on the Tor wiki, indicating that they'll allow relay nodes, but not exit nodes.
 </p>
 </div>
 
-<div id="outline-container-org5aceea6" class="outline-4">
-<h4 id="org5aceea6">Servers</h4>
-<div class="outline-text-4" id="text-org5aceea6">
+<div id="outline-container-org5decc99" class="outline-4">
+<h4 id="org5decc99">Servers</h4>
+<div class="outline-text-4" id="text-org5decc99">
 <dl class="org-dl">
 <dt><code>ns1.wikileaks.org</code> / <code>ns2.wikileaks.org</code></dt><dd>1 server (shared)</dd>
 </dl>
@@ -25253,17 +25253,17 @@ A medium-sized host in Switzerland, Solar Communications offers dedicated server
 </div>
 </div>
 
-<div id="outline-container-orgebec783" class="outline-3">
-<h3 id="orgebec783">LeaseWeb</h3>
-<div class="outline-text-3" id="text-orgebec783">
+<div id="outline-container-orgb432873" class="outline-3">
+<h3 id="orgb432873">LeaseWeb</h3>
+<div class="outline-text-3" id="text-orgb432873">
 <p>
 LeaseWeb is a longstanding hosting provider offering dedicated, bare metal, and virtual servers, private cloud services, a CDN, and cybersecurity services. It's owned by Ocom, an internet services company led by Con Zwinkels, LeaseWeb's founder. LeaseWeb has encouraged partnership with Russia in the past. Rustelekom is a reseller of their services, and they do have Russian data centers. Wikileaks does not appear to be using any of their Russian servers, but it remains unclear how much influence, if any, Russia could have over LeaseWeb.
 </p>
 </div>
 
-<div id="outline-container-org8460d76" class="outline-4">
-<h4 id="org8460d76">Servers</h4>
-<div class="outline-text-4" id="text-org8460d76">
+<div id="outline-container-org39b5a66" class="outline-4">
+<h4 id="org39b5a66">Servers</h4>
+<div class="outline-text-4" id="text-org39b5a66">
 <dl class="org-dl">
 <dt><code>wikileaks.org</code></dt><dd>2 servers</dd>
 <dt><code>ns3.wikileaks.org</code></dt><dd>1 servers</dd>
@@ -25273,9 +25273,9 @@ LeaseWeb is a longstanding hosting provider offering dedicated, bare metal, and 
 </div>
 </div>
 
-<div id="outline-container-orgcfa0e62" class="outline-3">
-<h3 id="orgcfa0e62">Hostkey</h3>
-<div class="outline-text-3" id="text-orgcfa0e62">
+<div id="outline-container-org9c1119e" class="outline-3">
+<h3 id="org9c1119e">Hostkey</h3>
+<div class="outline-text-3" id="text-org9c1119e">
 <p>
 Hostkey is a server, colocation and cloud hosting company based out of Moscow. They have an additional data center in Amsterdam, and listed one of the servers they rent to Wikileaks as being located there, despite GeoIP data indicating that the server is located in Moscow. Hostkey appears to be owned by Pyotr (or Petr or Peter) Chayanov, judging by whois data. As discussion broke about Chayanov on Twitter, he appears to have deleted all content on his twitter account. Chayanov is connected indirectly to Russian surveillance technology company MFI Soft through Alex Myodov, an MFI engineer who co-founded FreeBrie with him. See <a href="http://diago.sourceforge.net/cv_Myodov_Alexander_2009-01-20-en.pdf">Myodov's CV</a>, posted on an open source project of his.
 </p>
@@ -25285,9 +25285,9 @@ A connection is argued to exist between Chayanov/Hostkey and Guccifer2, based on
 </p>
 </div>
 
-<div id="outline-container-org9f20de8" class="outline-4">
-<h4 id="org9f20de8">Servers</h4>
-<div class="outline-text-4" id="text-org9f20de8">
+<div id="outline-container-orgda578f6" class="outline-4">
+<h4 id="orgda578f6">Servers</h4>
+<div class="outline-text-4" id="text-orgda578f6">
 <dl class="org-dl">
 <dt><code>wikileaks.org</code></dt><dd>1 server</dd>
 <dt><code>ns3.wikileaks.org</code></dt><dd>1 server</dd>
@@ -25298,9 +25298,9 @@ A connection is argued to exist between Chayanov/Hostkey and Guccifer2, based on
 </div>
 </div>
 
-<div id="outline-container-org2d421ac" class="outline-2">
-<h2 id="org2d421ac">Distinguishing Possible Configurations</h2>
-<div class="outline-text-2" id="text-org2d421ac">
+<div id="outline-container-orgd655e5b" class="outline-2">
+<h2 id="orgd655e5b">Distinguishing Possible Configurations</h2>
+<div class="outline-text-2" id="text-orgd655e5b">
 <p>
 There are two main themes in the set of possible configurations that would look like this. Either:
 </p>
@@ -25316,9 +25316,9 @@ There are no reliable ways to distinguish between these two possibilities. Minor
 </div>
 </div>
 
-<div id="outline-container-org6590439" class="outline-2">
-<h2 id="org6590439">Potential Impact</h2>
-<div class="outline-text-2" id="text-org6590439">
+<div id="outline-container-org639432b" class="outline-2">
+<h2 id="org639432b">Potential Impact</h2>
+<div class="outline-text-2" id="text-org639432b">
 <p>
 The company most likely to be of concern is Hostkey, due to links between it and both the Russian hacker community (through Hostkey's known hosting of malware sites) and the Russian surveillance community (through close colleague of Chayanov, Alex Myodov). Wikileaks hosts three servers with Hostkey: two nameservers and a web server.
 </p>
@@ -25329,9 +25329,9 @@ The nameservers are a mild to moderate concern, due to their ability to direct W
 </div>
 </div>
 
-<div id="outline-container-org715c589" class="outline-2">
-<h2 id="org715c589">Conclusion</h2>
-<div class="outline-text-2" id="text-org715c589">
+<div id="outline-container-orga859947" class="outline-2">
+<h2 id="orga859947">Conclusion</h2>
+<div class="outline-text-2" id="text-orga859947">
 <p>
 Given that there are reasons to doubt the trustworthiness of Hostkey and Chayanov, and given that the Hostkey-operated Wikileaks server may have cleartext access to the Wikileaks SSL cert, there are meaningful doubts to be had regarding the safety of accessing Wikileaks. It's worth noting that Assange has praised the Russian free press, arguing that Wikileaks isn't needed there. Wikileaks has not released any datasets targeting Russia at this time. 
 </p>
